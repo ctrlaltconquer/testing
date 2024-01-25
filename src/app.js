@@ -733,6 +733,13 @@ app.post("/resetPassword/:id/:token", function(req, res, next){
 });
 
 
+app.get('/logout', function(req, res){
+    req.session.destroy(function(){
+       res.redirect('/');
+    });
+ });
+ 
+
 
 // Running app on server 3000
 app.listen(3000, function(){
