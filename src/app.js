@@ -30,13 +30,8 @@ let langusers = "";
 let langjobs = "";
 
 
-<<<<<<< HEAD
 // PYTHON SHELL INSTALL DEPENDENCIES
 // let pyshell = new PythonShell('dependency.py');
-=======
-
-let pyshell = new PythonShell('dependency.py');
->>>>>>> origin/main
 
 //     pyshell.send("abc");
 
