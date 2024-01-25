@@ -110,7 +110,7 @@ app.use(
         autoRemove: 'interval', // Automatically remove expired sessions
         autoRemoveInterval: 10, // Interval in minutes (adjust according to your needs)
       }),
-      cookie: { maxAge: 1000 }, // Session expires after 1 hour
+      cookie: { maxAge: 600000 }, // Session expires after 1 hour
     })
   );
 
