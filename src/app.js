@@ -31,23 +31,23 @@ let langjobs = "";
 
 
 // PYTHON SHELL INSTALL DEPENDENCIES
-// let pyshell = new PythonShell('dependency.py');
+let pyshell = new PythonShell('dependency.py');
 
-//     pyshell.send("abc");
+    pyshell.send("abc");
 
     
-//     pyshell.on('message', function (message) {
-//         // received a message sent from the Python script (a simple "print" statement)
-//         console.log(message)
-//     });
+    pyshell.on('message', function (message) {
+        // received a message sent from the Python script (a simple "print" statement)
+        console.log(message)
+    });
 
-//       // end the input stream and allow the process to exit
-//   pyshell.end(function (err,code,signal) {
-//     if (err) throw err;
-//     console.log('The exit code was: ' + code);
-//     console.log('The exit signal was: ' + signal);
-//     console.log('finished');
-//   });
+      // end the input stream and allow the process to exit
+  pyshell.end(function (err,code,signal) {
+    if (err) throw err;
+    console.log('The exit code was: ' + code);
+    console.log('The exit signal was: ' + signal);
+    console.log('finished');
+  });
 
 
 // Handling Uploads
